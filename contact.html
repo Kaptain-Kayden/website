@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kayden Brewer - My Resume</title>
+    <style type="text/css">
+        header, body{margin: 0;}
+    </style>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <header>
+    <nav class= "main-nav">
+        <ul>
+            <li><a href="/about.html">About</a></li> 
+            <!-- insert bio, interests, etc -->
+            <li><a href="/resume.html">Resume</a></li>
+            <li><a id = nameheader href="/index.html">Kayden Brewer</a></li>
+            <!-- attach resume preview and downloadable PDF attachment -->
+            <li><a href="/projects.html">Gallery</a></li>
+            <!-- attach images of art -->
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body class= "contact-form" id="contact-form">
+    <p>Use the following form to contact me or feel free to use your own methods using the contact info at the bottom of the page.</p>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name...">
+      
+          <label for="email">Email</label>
+          <input type="text"id="email"name="email" placeholder="Your preferred email..."><br>
+      
+          <label for="message">Message</label>
+          <textarea id="subject" name="message" placeholder="Write something..." style="height:200px"></textarea>
+      
+          <div class="button-area">
+            <button type="submit">Send Message</button>
+            <span></span>
+          </div>
+        </form>
+      </div>
+      <p>OR contact me manually at: kjb14@rice.edu</p>
+</body>
+</html>

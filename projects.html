@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kayden Brewer - Gallery</title>
+    <style type="text/css">
+        header, body{margin: 0; padding: 0;}
+    </style>
+     <script type="text/javascript" src="script.js"></script>
+  </head>
+  <header>
+    <nav class= "main-nav">
+        <ul>
+            <li><a href="/about.html">About</a></li> 
+            <!-- insert bio, interests, etc -->
+            <li><a href="/resume.html">Resume</a></li>
+            <li><a id = nameheader href="/index.html">Kayden Brewer</a></li>
+            <!-- attach resume preview and downloadable PDF attachment -->
+            <li><a href="/projects.html">Gallery</a></li>
+            <!-- attach images of art -->
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body class = "gallery">
+    <div class="img-preview" id="imgbackground">
+        <img src="img1.jpeg" id="fullsizeimg">
+        <h2 id=imgcaption>this is filler</h2>
+        <span onclick= "close_fullsizeimg()">X</span>
+    </div>
+    <div class="project-gallery">
+        <img src="img1.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('Title 1'))"> 
+        <img src="img2.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 2'))">
+        <img src="img3.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 3'))">
+        <img src="img7.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 4'))">
+        <img src="img5.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 5'))">
+        <img src="img6.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 6'))">
+        <img src="img10.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 7'))">
+        <img src="img8.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 8'))">
+        <img src="img9.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 9'))">
+        <img src="img11.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 10'))">
+        <img src="img12.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 12'))">
+        <img src="img14.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 13'))">
+        <img src="img13.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 14'))">
+        <img src="img15.jpeg" onclick= "open_fullsizeimg(this.src); open_caption(String('unique caption 15'))">
+    </div>
+    <script>
+        var imgbackground = document.getElementById("imgbackground");
+        var fullsizeimg = document.getElementById("fullsizeimg");
+        var imgcaption = document.getElementById("imgcaption");
+    
+        function open_fullsizeimg(pic){
+        imgbackground.style.display = "flex";
+        fullsizeimg.src = pic;
+        }
+        
+        function open_caption(caption){
+        imgcaption.textContent = caption;
+        }
+
+        function close_fullsizeimg(){
+        imgbackground.style.display = "none";
+        }
+    </script>
+</body>
+</html>

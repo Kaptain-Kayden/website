@@ -1,0 +1,52 @@
+ <section class="banner">
+        <img src="img/banner.jpg" alt="space theme banner">
+        <div class=welcome>
+            <h2><span>Thank you for visitng today!<br></span>My name Kayden and I hope you enjoy this website that I created to demonstrate my html/CSS and, eventually, Javascript skills.</h2>
+        </div>
+    </section>
+
+    <article>
+            <h2>My name is Kayden and I hope you enjoy your visit today :)</h2>
+            <p>I created this website myself in order to demonstrate my html, CSS, and JavaScript
+            abilities. While the intention of this website is as I just stated, it also serves as
+            a central point of access to my bio, resume, and art portfolio. </p>
+        </article>
+
+
+        <main>
+            <article>
+                <h2>My name is Kayden and I hope you enjoy your visit today :)</h2>
+                <p>I created this website myself in order to demonstrate my html, CSS, and JavaScript
+                abilities. While the intention of this website is as I just stated, it also serves as
+                a central point of access to my bio, resume, and art portfolio. </p>
+            </article>
+        </main>
+    </body>
+    <footer>
+        <p class="foot">Kayden Brewer 2021</p>
+    </footer>
+
+seperaten file for project gallery javascript trash:
+
+    // scirpt for project gallery
+document.getElementById("imgbackground")=localStorage.a;
+document.getElementById("fullsizeimg")=localStorage.b;
+
+function open_fullsizeimg(){
+    imgbackground.style.display = "flex";
+    fullsizeimg.src = pic
+}
+
+function close_fullsizeimg(){
+    imgbackground.style.display = "none";
+}
+
+<script>
+var imgbackground = document.getElementById("imgbackground");
+var fullsizeimg = document.getElementById("fullsizeimg");
+localStorage.a = imgbackground;
+localStorage.b = fullsizeimg;
+</script>
+
+
+    
